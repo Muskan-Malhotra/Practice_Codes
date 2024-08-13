@@ -18,6 +18,7 @@ class SquartRoot {
             System.out.println(obj.floorSqrt(a));
             t--;
         }
+        sc.close();
     }
 }
 // } Driver Code Ends
