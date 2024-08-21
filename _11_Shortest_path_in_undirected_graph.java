@@ -48,6 +48,12 @@ class Solution {
     public int[] shortestPath(int[][] edges,int n,int m ,int src) {
         // lets create a graph
         
+        int[] ans = new int[n]; // i/p 2 1 ; 0 1 ; 1 0
+        if( n == 1 && m == 0){
+            ans[0] = m;
+            return ans;
+        }
+        
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
         
         for(int i=0;i<n;i++){   // depend on vertices
@@ -68,14 +74,13 @@ class Solution {
         //     }
         // }
         
-        int[] ans = new int[n];
         Arrays.fill(ans,-1);
         boolean[] vis = new boolean[n];
         getShortestPath(graph, src,vis, ans);
         
         return ans;
     }
-    
+
     public void getShortestPath( ArrayList<ArrayList<Integer>> graph, int src,boolean[] vis, int[] ans){
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         
