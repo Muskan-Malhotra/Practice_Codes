@@ -1,6 +1,5 @@
 //{ Driver Code Starts
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
 class GFG {
@@ -23,6 +22,7 @@ class GFG {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
 
