@@ -63,7 +63,7 @@ class Solution {
         for(int i=0;i<arr.length;i++){
             // int peek = st.size() > 0 ? st.peek() : 0;
             // System.out.println("st.peek(): " + peek);
-            // if( st.size() > 0 && arr[i] < st.peek()){
+            // if( st.size() > 0 && arr[i] < st.peek()){  //this code is not required
                 
                 while(st.size() > 0 && st.peek() >= arr[i]){ //this equal to is most important check test cases
                     st.pop();
