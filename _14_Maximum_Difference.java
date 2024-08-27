@@ -80,15 +80,11 @@ class Solution {
      public void rightSmallest(int[] arr, int[] rsArr){
         Stack<Integer> st = new Stack<>();
         for(int i=arr.length-1;i>=0;i--){
-            // if( st.size() > 0 && arr[i] < st.peek()){
-                while(st.size() > 0 && st.peek() >= arr[i]){
-                    st.pop();
-                }
-                rsArr[i] = st.size() == 0  ? 0 : st.peek();
-            // } else { //arr[i] > st.peek()
-            //     rsArr[i] = st.size() == 0  ? 0 : st.peek();
- 
-            // }
+            while(st.size() > 0 && st.peek() >= arr[i]){
+                st.pop();
+            }
+            rsArr[i] = st.size() == 0  ? 0 : st.peek();
+        
             
             st.push(arr[i]);
         }
