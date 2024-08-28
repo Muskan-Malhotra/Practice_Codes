@@ -1,6 +1,9 @@
 //{ Driver Code Starts
 // Initial Template for Java
 
+/** the time complexity is 
+O(nlogn), and the space complexity is: O(n). */
+
 import java.io.*;
 import java.util.*;
 import java.util.Map.Entry;
@@ -98,3 +101,7 @@ class Driverclass {
 }
 
 // } Driver Code Ends
+
+/* Test cases
+ * 4 6 9 19 2 16 13 11 16 17 16 8 12 16 12 18
+ */
