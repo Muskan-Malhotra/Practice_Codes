@@ -4,6 +4,10 @@
 /** the time complexity is 
 O(nlogn), and the space complexity is: O(n). */
 
+/*
+ * Consider using a TreeMap instead of a HashMap to store the frequencies of elements. TreeMap automatically sorts elements based on keys, which can simplify the sorting process. Additionally, you can explore using a custom comparator with PriorityQueue to achieve the desired sorting based on frequency and value.
+ */
+
 import java.io.*;
 import java.util.*;
 import java.util.Map.Entry;
