@@ -15,6 +15,8 @@ class _25_GFG_Nth_Natural_no {
             long k = ab.findNth(n);
             System.out.println(k);
         }
+
+        ob.close();
     }
 }
 
