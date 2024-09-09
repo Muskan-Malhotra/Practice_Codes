@@ -2,7 +2,6 @@
 //{ Driver Code Starts
 // Initial Template for Java
 
-import java.io.*;
 import java.util.*;
 
 class _25_GFG_Nth_Natural_no {
