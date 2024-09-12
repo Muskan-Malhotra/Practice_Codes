@@ -17,6 +17,7 @@ class _23_missing_in_array {
             Solution sln = new Solution();
             System.out.println(sln.missingNumber(n, arr));
         }
+        
     }
 }
 // } Driver Code Ends
